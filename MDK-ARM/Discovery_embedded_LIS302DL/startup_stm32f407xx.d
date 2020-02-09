@@ -1,0 +1,1 @@
+discovery_embedded_lis302dl\startup_stm32f407xx.o: startup_stm32f407xx.s

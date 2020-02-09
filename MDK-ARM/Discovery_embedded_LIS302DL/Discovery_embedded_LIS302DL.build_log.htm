@@ -1,0 +1,147 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ubeydullah Yavuz, student, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.27.1.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\hubbe\OneDrive\Belgeler\STM32-Discovery\Discovery_embedded_LIS302DL\MDK-ARM\Discovery_embedded_LIS302DL.uvprojx
+Project File Date:  02/09/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Discovery_embedded_LIS302DL'
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_spi.c...
+compiling main.c...
+../Src/main.c(136): warning:  #188-D: enumerated type mixed with another type
+  			else if(accData.x >= 0)HAL_GPIO_WritePin(GPIOD,GPIO_PIN_14, 0x00);
+../Src/main.c(146): error:  #65: expected a ";"
+  {
+../Src/main.c(167): warning:  #12-D: parsing restarts here after previous syntax error
+      Error_Handler();
+../Src/main.c(171): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+../Src/main.c(171): error:  #65: expected a ";"
+    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+../Src/main.c(173): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Src/main.c(173): error:  #65: expected a ";"
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Src/main.c(174): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+../Src/main.c(174): error:  #65: expected a ";"
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+../Src/main.c(175): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV8;
+../Src/main.c(175): error:  #65: expected a ";"
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV8;
+../Src/main.c(176): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV4;
+../Src/main.c(176): error:  #65: expected a ";"
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV4;
+../Src/main.c(178): error:  #169: expected a declaration
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+../Src/main.c(211): warning:  #12-D: parsing restarts here after previous syntax error
+    hspi1.Init.CRCPolynomial = 10;
+../Src/main.c(212): error:  #169: expected a declaration
+    if (HAL_SPI_Init(&hspi1) != HAL_OK)
+../Src/main.c(250): warning:  #12-D: parsing restarts here after previous syntax error
+    GPIO_InitStruct.Pin = GPIO_PIN_0;
+../Src/main.c(251): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+../Src/main.c(251): error:  #65: expected a ";"
+    GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+../Src/main.c(252): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+../Src/main.c(252): error:  #65: expected a ";"
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+../Src/main.c(253): error:  #79: expected a type specifier
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+../Src/main.c(253): error:  #79: expected a type specifier
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+../Src/main.c(253): error:  #260-D: explicit type is missing ("int" assumed)
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+../Src/main.c(253): error:  #147: declaration is incompatible with "void HAL_GPIO_Init(GPIO_TypeDef *, GPIO_InitTypeDef *)"  (declared at line 241 of "../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h")
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+../Src/main.c(256): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15;
+../Src/main.c(256): error:  #65: expected a ";"
+    GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15;
+../Src/main.c(257): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+../Src/main.c(257): error:  #65: expected a ";"
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+../Src/main.c(258): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+../Src/main.c(258): error:  #65: expected a ";"
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+../Src/main.c(259): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+../Src/main.c(259): error:  #65: expected a ";"
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+../Src/main.c(260): error:  #79: expected a type specifier
+    HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+../Src/main.c: 4 warnings, 30 errors
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_it.c...
+compiling MY_LIS3DSH.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_pwr.c...
+"Discovery_embedded_LIS302DL\Discovery_embedded_LIS302DL.axf" - 30 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil.STM32F4xx_DFP.2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Discovery_embedded_LIS302DL
+  C:\Users\hubbe\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Users\hubbe\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+Target not created.
+Build Time Elapsed:  00:00:35
+</pre>
+</body>
+</html>
